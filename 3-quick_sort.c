@@ -49,7 +49,7 @@ void quick_sort2(int *array, int f, int l, int size)
 {
 	int q;
 
-	if (l >= f && f >= 0)
+	if (l > f && f >= 0)
 	{
 		q = partition(array, f, l, size);
 		quick_sort2(array, f, q - 1, size);
